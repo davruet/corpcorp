@@ -6,7 +6,8 @@ var emoji = ['😀', '😁', '😂', '🤣', '😃', '😄', '😅', '😆', '�
 function draw() {
   background(128,128,128,.1)
   fill(255,255,255,random(100,255));
-  let size = random(30,200);
+  let scale = windowWidth / 1900.0
+  let size = random(30*scale,200*scale);
   textSize(size);
   textAlign(CENTER);
   translate(random(windowWidth),random(windowHeight) + size/2);
